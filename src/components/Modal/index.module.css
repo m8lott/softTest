@@ -1,0 +1,187 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1111;
+}
+
+.modalContent {
+  background: var(--blue-purp);
+  color: var(--contrast);
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90%;
+  padding: 20px;
+  position: relative;
+  z-index: 9999;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: var(--blueLightPup);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modalHeader img {
+  margin-right: 10px;
+}
+
+.modalTitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--contrast);
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.modalStep {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stepNumber {
+  background: var(--blue);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.stepText {
+  font-size: 16px;
+}
+
+.progressContainer {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  background: var(--blue-perwi);
+  height: 4px;
+  border-radius: 2px;
+  flex: 1;
+}
+
+.progress {
+  background: var(--blue);
+  height: 100%;
+  border-radius: 2px;
+}
+
+.modalBody {
+  margin-top: 10px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  color: var(--gray-aluminium);
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.formLabel a.link {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--blueLightPup);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  color: var(--contrast);
+}
+
+.fileTypeButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.fileTypeButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--blue-purp);
+  border-radius: 6px;
+  color: var(--contrast);
+  outline: none;
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.uploadArea {
+  border: 2px dashed var(--blue);
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+}
+
+.uploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9ca3af;
+}
+
+.uploadPlaceholder svg {
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.uploadText {
+  margin: 0;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancelButton,
+.nextButton {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background: none;
+  border: 1px solid var(--blue-perwi);
+  color: var(--contrast);
+}
+
+.nextButton {
+  background: var(--blue);
+  border: none;
+  color: var(--contrast);
+}

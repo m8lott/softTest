@@ -1,0 +1,237 @@
+.header {
+  width: 100%;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1000;
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header__search {
+  position: relative;
+}
+
+.header__search-input {
+  padding: 5px 0 5px 26px;
+  background-color: var(--blueLightPup);
+  border-radius: 6px;
+  color: var(--contrast);
+  outline: none;
+  border: 1px solid var(--border);
+  width: 340px;
+  background-image: url("../../assets/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 12px 12px;
+  box-sizing: border-box;
+}
+
+.header__search-input::placeholder {
+  color: var(--gray-aluminium);
+}
+
+.dropdown {
+  background-color: var(--blueLightPup);
+  border-radius: 6px;
+  color: var(--gray-aluminium);
+  outline: none;
+  border: 1px solid var(--border);
+  padding: 0 10px;
+  position: relative;
+}
+
+.dropdown__button {
+  background-color: var(--blueLightPup);
+  border-radius: 6px;
+  color: var(--gray-aluminium);
+  outline: none;
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dropdown__button.active {
+  border-bottom: none;
+}
+
+.dropdown__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: var(--blueLightPup);
+  border-radius: 6px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 300px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-sizing: border-box;
+}
+
+.btnHeader button {
+  padding: 5px 16px;
+  border-radius: 6px;
+  background-color: var(--blue);
+  text-align: center;
+  color: var(--contrast);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+}
+
+.dateFilter {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-purp);
+  padding: 6px 10px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.burger {
+  background-color: var(--blue-purp);
+  padding: 10px 8px;
+  border-radius: 6px;
+  max-width: 40px;
+  display: none;
+}
+
+.burgerButton {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/icons/burger.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background-image 0.3s ease;
+}
+
+.burgerButton.active {
+  background-image: url("../../assets/icons/close.svg");
+}
+
+.dateFilter__button {
+  background: none;
+  border: none;
+  color: var(--gray-aluminium);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .header__wrapper {
+    position: static;
+  }
+  .header__content {
+    margin-top: 120px;
+  }
+  .header__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--blue-purp);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 60px 20px 20px;
+  }
+
+  .header__container.active {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    z-index: 1001;
+  }
+
+  .header__search-input {
+    width: 100%;
+    max-width: none;
+  }
+
+  .dropdown {
+    padding: 0;
+  }
+
+  .dropdown__button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .btnHeader button {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .dateFilter {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    padding: 0 15px;
+    justify-content: flex-start;
+  }
+
+  .header__search-input {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .dropdown__button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    gap: 15px;
+  }
+
+  .header__search-input {
+    padding: 5px 0 5px 30px;
+  }
+}

@@ -1,0 +1,98 @@
+.card {
+  background-color: var(--blue-purp);
+  border-radius: 8px;
+  color: var(--contrast);
+  width: 300px;
+  overflow: hidden;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--blueLightPup);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  height: 300px;
+}
+.card__eye {
+  background-color: var();
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 6px 4px;
+  background-color: var(--blue-space);
+}
+.cardBody {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cardInfoImg {
+  background-color: var(--blue-perwi);
+  border-radius: 6px;
+}
+.cardInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__subscribers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cardLabel {
+  color: var(--gray-aluminium);
+  min-width: 100px;
+}
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+}
+.cardInfo p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.cardInfo img {
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.cardItems {
+  display: flex;
+  gap: 5px;
+}
+
+.cardBtn {
+  margin-left: auto;
+}
+
+.cardBtn img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.cardManage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
