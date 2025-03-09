@@ -1,12 +1,17 @@
-# React + Vite
+# Инструкция по запуску проекта локально
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Для того чтобы запустить проект из репозитория на вашем компьютере, выполните следующие шаги:
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Клонирование репозитория
 
-## Expanding the ESLint configuration
+Для начала клонируйте репозиторий на свой локальный компьютер. Для этого выполните команду:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`git clone https://github.com/m8lott/softTest.git`
+### 2. Установка зависимостей
+`npm install`
+### 3. Запуск проекта
+`npm run dev`
+
+### После выполнения этих шагов проект будет доступен локально.
